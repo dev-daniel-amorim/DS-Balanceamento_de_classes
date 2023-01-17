@@ -5,6 +5,8 @@ Classes desbalanceadas são quando uma representação de classe com muitos valo
 - 90% não são fraudes
 - 10% são fraudes
 
+Notamos claramente o desbalanceamento, onde a classe majoritária tem 90% de exemplos de operações não fraudulentas contra 10% de exemplos de fraude. Isso pode implicar no nosso modelo "viciar" em prever somente ações que não são fraudes.
+
 # Tipos de balanceamentos
 É muito comum encontrarmos classes desbalanceadas, mas pra isso existem algumas tecnicas de balanceamento:
     
