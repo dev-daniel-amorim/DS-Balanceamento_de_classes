@@ -11,16 +11,21 @@ Notamos claramente o desbalanceamento, onde a classe majoritária tem 90% de exe
 É muito comum encontrarmos classes desbalanceadas, mas pra isso existem algumas tecnicas de balanceamento:
     
 ## Undersampling
-Consiste em reduzir de forma aleatória o volume de dados da classe majoritária, causando perda de dados que podem ser importantes deixando nosso modelo enfraquecido.
+Consiste em reduzir de forma aleatória o volume de dados da classe majoritária, causando perda de dados que podem ser importantes deixando nosso modelo enfraquecido, 
         
-## NearMiss
-Consiste em reduzir de forma aleatória o volume de dados da classe majoritária, porém buscando reduzir os dados que se aproximam da classe minoritária, causando tbm perda de dados.
+* NearMiss é um modelo de balanceamento undersampling.
+* Biblioteca:
+
+        from imblearn.under_sampling import NearMiss
+
         
 ## Oversampling
-Replica dados da classe minoritária para manter igualdade entre os dados mas pode causar overfit (O ajuste excessivo é um comportamento indesejável de aprendizado de máquina que ocorre quando o modelo de aprendizado fornece previsões precisas para dados de treinamento, mas não para novos dados).
+Replica dados da classe minoritária para manter igualdade entre os dados procurando caracteristicas dos dados vizinhos, mas pode causar overfit (O ajuste excessivo é um comportamento indesejável de aprendizado de máquina que ocorre quando o modelo de aprendizado fornece previsões precisas para dados de treinamento, mas não para novos dados).
         
-## Smote
-Procura caracteristicas dos dados vizinhos para criar novos dados sem replica-los, efetuando cálculos e criando assim novos dados.<br>
+* Smote é um modelo de balanceamento oversampling.
+* Biblioteca:
+
+        from imblearn.over_sampling import SMOTE
 <br>
  ![smote](https://user-images.githubusercontent.com/115194365/212982317-a3fc43b4-d2a9-4e4e-8412-b1372bacc4aa.jpg)<br>
  
