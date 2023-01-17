@@ -19,5 +19,6 @@ Replica dados da classe minoritária para manter igualdade entre os dados mas po
         
 ## Smote
 Procura caracteristicas dos dados vizinhos para criar novos dados sem replica-los, efetuando cálculos e criando assim novos dados.<br>
+<br>
  ![smote](https://user-images.githubusercontent.com/115194365/212982317-a3fc43b4-d2a9-4e4e-8412-b1372bacc4aa.jpg)<br>
 
