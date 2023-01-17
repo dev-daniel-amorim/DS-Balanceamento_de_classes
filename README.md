@@ -27,7 +27,9 @@ Replica dados da classe minoritária para manter igualdade entre os dados procur
 
         from imblearn.over_sampling import SMOTE
 <br>
- ![smote](https://user-images.githubusercontent.com/115194365/212982317-a3fc43b4-d2a9-4e4e-8412-b1372bacc4aa.jpg)<br>
+
+![smote](https://user-images.githubusercontent.com/115194365/213033541-39484a5f-6085-4d51-870a-fff62caa5e5e.jpg)
+
  
  ## Engenharia de features
  Consiste na geração de novas features para dar mais robustez e melhorar a classe minoritária, porém esse métododemanda tempo e encarece o projeto.
