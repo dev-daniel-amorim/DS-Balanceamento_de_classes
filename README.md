@@ -32,5 +32,5 @@ Replica dados da classe minoritária para manter igualdade entre os dados procur
 
  
  ## Engenharia de features
- Consiste na geração de novas features para dar mais robustez e melhorar a classe minoritária, porém esse métododemanda tempo e encarece o projeto.
+ Consiste na geração de novas features para dar mais robustez e melhorar a classe minoritária, porém esse método demanda tempo e aumenta significativamente os custos do projeto.
 
