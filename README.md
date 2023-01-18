@@ -35,3 +35,5 @@ Replica dados da classe minoritária para manter igualdade entre os dados procur
  ## Engenharia de features
  Consiste na geração de novas features para dar mais robustez e melhorar a classe minoritária, porém esse método demanda tempo e aumenta significativamente os custos do projeto.
 
+## Projeto
+<a href='https://github.com/dev-daniel-amorim/DS-Balanceamento_de_classes/blob/main/Balanceamento%20de%20classes.ipynb'> Clique aqui para ir para o projeto de balanceamento de classes! </a> 
