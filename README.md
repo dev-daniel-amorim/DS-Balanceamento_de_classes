@@ -26,7 +26,7 @@ Notamos claramente o desbalanceamento extremo. Isso pode implicar no nosso model
 É muito comum encontrarmos classes desbalanceadas, mas pra isso existem algumas técnicas para tratar essas classes desbalanceadas, são elas:
     
 ## Undersampling
-Consiste em reduzir de forma aleatória o volume de dados da classe majoritária, causando perda de dados que podem ser importantes deixando nosso modelo enfraquecido, 
+Consiste em reduzir de forma aleatória e artificial o volume de dados da classe majoritária, causando perda de dados que podem ser importantes deixando nosso modelo enfraquecido.
         
 * NearMiss é um modelo de balanceamento undersampling.
 * Biblioteca:
@@ -39,13 +39,18 @@ Aumenta artificialmente o número de classes minoritárias para igualar a classe
 
 Replica dados da classe minoritária para manter igualdade entre a classe maioritária procurando caracteristicas dos dados vizinhos, mas atenção, pode causar overfitting (acerto elevado dos dados). O ajuste excessivo é um comportamento indesejável de aprendizado de máquina que ocorre quando o modelo de aprendizado fornece previsões precisas para dados de treinamento, mas não para novos dados.
         
-* Smote é um modelo de balanceamento oversampling.
+* SMOTE (Synthetic Minority Over-sampling Technique).
+* Copia e cola a classe minoritária para igualar a classe majoritária fazendo com que ela não tenha "preferência".
 * Biblioteca:
 
         from imblearn.over_sampling import SMOTE
 <br>
 
 ![smote](https://user-images.githubusercontent.com/115194365/213033541-39484a5f-6085-4d51-870a-fff62caa5e5e.jpg)
+
+#### ⚠️ Muito cuidado com essa técnica!
+- Não se deve fazer, JAMAIS, o balanceamento de classe antes do cross validation, muito cuidado pois vários tutoriais ensinam errado por ai! 
+-  O problema está na validação, pois no momento em que igualamos artificilmente as classes e aumentamos a classe minoritária estamos dizendo que em tese, 50% sao "fraude" e 50% "não fraude" o que foge da realidade do mundo real, onde no mundo real há menos "transações fraudulentas" do que "não fraudulentas". Resumindo, já começariamos distorcendo o mundo real e ensinando errado ao nosso modelo.
 
 ## Class weight
 Da pesos diferentes para cada classe com base na sua proporção.
