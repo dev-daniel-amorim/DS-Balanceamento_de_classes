@@ -1,5 +1,7 @@
 # Balanceamento de classes
-Classes desbalanceadas são quando uma representação de classe com muitos valores de um tipo (majoritária ou minoritária) e sua classe oposta possui poucos exemplos, onde o algoritimo vai aprender muito sobre um e pouco sobre a outra trazendo um viés negativo para predição.<br>
+Classes desbalanceadas são aquelas classes discretas que queremos prever que possuem muitos valores de um tipo (majoritária) e sua classe oposta possui poucos exemplos (minoritária), onde o algoritimo vai aprender muito sobre um e pouco sobre a outra trazendo um viés negativo para predição.<br>
+
+Calcular a acurácia de uma classe desbalanceada é como enxugar gelo, pois o modelo pode chutar que uma transação não é "fraudulenta" e acertar 90% das vezes.
 
 Exemplo de classes desbalanceadas: <br>
 * Imagine uma variável alvo com classes negativas = não fraude, e positiva = fraude onde:<br>
