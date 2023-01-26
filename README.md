@@ -23,7 +23,7 @@ Tabela de grau de desiquilibrio:
 Notamos claramente o desbalanceamento extremo. Isso pode implicar no nosso modelo "viciar" em prever somente ações que não são fraudes. Muito cuidado com isso, um modelo com classes desbalanceadas podem ter uma acuracia altissima pois em 99% dos casos ele vai acertar causando overfitting (acerto elevado dos dados).
 
 # Tipos de balanceamentos
-É muito comum encontrarmos classes desbalanceadas, mas pra isso existem algumas tecnicas de balanceamento:
+É muito comum encontrarmos classes desbalanceadas, mas pra isso existem algumas técnicas para tratar essas classes desbalanceadas, são elas:
     
 ## Undersampling
 Consiste em reduzir de forma aleatória o volume de dados da classe majoritária, causando perda de dados que podem ser importantes deixando nosso modelo enfraquecido, 
@@ -35,6 +35,8 @@ Consiste em reduzir de forma aleatória o volume de dados da classe majoritária
 
         
 ## Oversampling
+Aumenta artificialmente o número de classes minoritárias para igualar a classe majoritária.
+
 Replica dados da classe minoritária para manter igualdade entre a classe maioritária procurando caracteristicas dos dados vizinhos, mas atenção, pode causar overfitting (acerto elevado dos dados). O ajuste excessivo é um comportamento indesejável de aprendizado de máquina que ocorre quando o modelo de aprendizado fornece previsões precisas para dados de treinamento, mas não para novos dados.
         
 * Smote é um modelo de balanceamento oversampling.
@@ -45,9 +47,12 @@ Replica dados da classe minoritária para manter igualdade entre a classe maiori
 
 ![smote](https://user-images.githubusercontent.com/115194365/213033541-39484a5f-6085-4d51-870a-fff62caa5e5e.jpg)
 
- 
- ## Engenharia de features
- Consiste na geração de novas features para dar mais robustez e melhorar a classe minoritária, porém esse método demanda tempo e aumenta significativamente os custos do projeto.
+## Class weight
+Da pesos diferentes para cada classe com base na sua proporção.
 
-## Projeto
-<a href='https://github.com/dev-daniel-amorim/DS-Balanceamento_de_classes/blob/main/Balanceamento%20de%20classes.ipynb'> Clique aqui para ir para o projeto de balanceamento de classes! </a> 
+ 
+## Engenharia de features
+Consiste na geração de novas features para dar mais robustez e melhorar a classe minoritária, porém esse método demanda tempo e aumenta significativamente os custos do projeto.
+
+# Notebook
+[Clique aqui para ver o notebook dessa aula](https://github.com/dev-daniel-amorim/DS-Balanceamento_de_classes/blob/main/Balanceamento%20de%20classes.ipynb)
