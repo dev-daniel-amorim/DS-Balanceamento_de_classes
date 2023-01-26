@@ -33,7 +33,7 @@ Consiste em reduzir de forma aleatória o volume de dados da classe majoritária
 
         
 ## Oversampling
-Replica dados da classe minoritária para manter igualdade entre os dados procurando caracteristicas dos dados vizinhos, mas pode causar overfit (O ajuste excessivo é um comportamento indesejável de aprendizado de máquina que ocorre quando o modelo de aprendizado fornece previsões precisas para dados de treinamento, mas não para novos dados).
+Replica dados da classe minoritária para manter igualdade entre a classe maioritária procurando caracteristicas dos dados vizinhos, mas atenção, pode causar overfit. O ajuste excessivo é um comportamento indesejável de aprendizado de máquina que ocorre quando o modelo de aprendizado fornece previsões precisas para dados de treinamento, mas não para novos dados.
         
 * Smote é um modelo de balanceamento oversampling.
 * Biblioteca:
