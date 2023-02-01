@@ -67,3 +67,7 @@ Consiste na geração de novas features para dar mais robustez e melhorar a clas
 
 # Notebook
 [Clique aqui para ver o notebook dessa aula](https://github.com/dev-daniel-amorim/DS-Balanceamento_de_classes/blob/main/Balanceamento%20de%20classes.ipynb)
+<br>
+<hr>
+
+[<< Voltar para página inicial](https://github.com/dev-daniel-amorim)
