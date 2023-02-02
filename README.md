@@ -50,7 +50,7 @@ Replica dados da classe minoritária para manter igualdade entre a classe majori
 
 #### ⚠️ Muito cuidado com essa técnica!
 - Uma dica importante, é que pode melhorar e muito acurácia do seu modelo é não fazer o balanceamento de classes antes do cross validation.
--  O problema está na validação, pois no momento em que igualamos artificilmente as classes e aumentamos a classe minoritária estamos dizendo que em tese, 50% sao "fraude" e 50% "não fraude" o que foge da realidade do mundo real, onde no mundo real há menos "transações fraudulentas" do que "não fraudulentas". Resumindo, já começariamos distorcendo o mundo real e ensinando errado ao nosso modelo.
+-  O problema está na validação, pois no momento em que igualamos artificilmente as classes e aumentamos a classe minoritária estamos dizendo que em tese, 50% são "fraude" e 50% "não fraude" o que foge da realidade do mundo real, onde no mundo real há menos "transações fraudulentas" do que "não fraudulentas". Resumindo, já começariamos distorcendo o mundo real e ensinando errado ao nosso modelo.
 -  Ao fazer o CV, o split de treino pode ter as classes já balanceadas, mas a validação onde vamos testar os dados não pode estar balanceada, ou seja, não pode fugir da realidade do mundo real.
 -  Erro comum, balancear tudo antes do CV vai separar tudo (treino, validação e teste) já balanceado. ERRADO!
 - O balanceamento deve ser feito SOMENTE nos splits de treino e não na validação.
