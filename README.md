@@ -70,8 +70,9 @@ Consiste na geração de novas features para dar mais robustez e melhorar a clas
 
 # Fontes
 
-SÓLON, Leon. Classes desbalanceadas: Você está fazendo errado. YouTube, 27 de julho de 2022. Disponível em <https://www.youtube.com/watch?v=PwlKbdsVsiY>. Acesso em 29 de favereiro de 2023.
+SÓLON, Leon. Classes desbalanceadas: Você está fazendo errado. YouTube, 27 de julho de 2022. Disponível em <https://www.youtube.com/watch?v=PwlKbdsVsiY>. Acesso em 25 de janeiro de 2023.
 
 <br>
 <hr>
+
 [<< Voltar para página inicial](https://github.com/dev-daniel-amorim)
