@@ -49,9 +49,9 @@ Replica dados da classe minoritária para manter igualdade entre a classe majori
 ![smote](https://user-images.githubusercontent.com/115194365/213033541-39484a5f-6085-4d51-870a-fff62caa5e5e.jpg)
 
 #### ⚠️ Muito cuidado com essa técnica!
-- Uma dica importante, é que pode melhorar e muito acurácia do seu modelo é não fazer o balanceamento de classes antes do cross validation.
--  O problema está na validação, pois no momento em que igualamos artificilmente as classes e aumentamos a classe minoritária estamos dizendo que em tese, 50% são "fraude" e 50% "não fraude" o que foge da realidade do mundo real, onde no mundo real há menos "transações fraudulentas" do que "não fraudulentas". Resumindo, já começariamos distorcendo o mundo real e ensinando errado ao nosso modelo.
--  Ao fazer o CV, o split de treino pode ter as classes já balanceadas, mas a validação onde vamos testar os dados não pode estar balanceada, ou seja, não pode fugir da realidade do mundo real.
+- Uma dica importante, é não balancear a validação, assim nosso modelo será validado com uma amostra do mundo "real" (não balanceado), a acurácia doseu modelo pode e vai diminuir claro, mas observando por outro lado, você não será enganado com uma acuracia feita com base num dado balanceado que não reflete a realizade.
+-  O problema está na validação, pois no momento em que igualamos artificilmente as classes e aumentamos a classe minoritária estamos dizendo que em tese, 50% são "fraude" e 50% "não fraude" o que foge da realidade do mundo real, onde no mundo real há menos "transações fraudulentas" do que "não fraudulentas". Resumindo, já começariamos distorcendo o mundo real e aceitando uma acurácia distorcida.
+-  Ao fazer o CV, o split de treino pode ter as classes já balanceadas, mas a validação onde vamos testar os dados não pode estar balanceada, ou seja, não pode fugir da realidade.
 -  Erro comum, balancear tudo antes do CV vai separar tudo (treino, validação e teste) já balanceado. ERRADO!
 - O balanceamento deve ser feito SOMENTE nos splits de treino e não na validação.
 
@@ -67,7 +67,11 @@ Consiste na geração de novas features para dar mais robustez e melhorar a clas
 
 # Notebook
 [Clique aqui para ver o notebook dessa aula](https://github.com/dev-daniel-amorim/DS-Balanceamento_de_classes/blob/main/Balanceamento%20de%20classes.ipynb)
+
+# Fontes
+
+SÓLON, Leon. Classes desbalanceadas: Você está fazendo errado. YouTube, 27 de julho de 2022. Disponível em <https://www.youtube.com/watch?v=PwlKbdsVsiY>. Acesso em 29 de favereiro de 2023.
+
 <br>
 <hr>
-
 [<< Voltar para página inicial](https://github.com/dev-daniel-amorim)
